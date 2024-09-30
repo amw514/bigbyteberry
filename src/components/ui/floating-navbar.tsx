@@ -27,7 +27,7 @@ export const FloatingNav = ({
         <Image src="/Logowithtext.svg" alt="alt" width={120} height={60} />
       </div>
       <div className="flex justify-between space-x-3">
-        {navItems.map((navItem: any, idx: number) => (
+        {navItems.map((navItem: { name: string; link: string; icon?: JSX.Element }, idx: number) => (
           <Link
             key={`link=${idx}`}
             href={navItem.link}
