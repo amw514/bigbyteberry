@@ -25,7 +25,7 @@ export function HeroLeftSection() {
         AI-driven strategies. Let us help you transform potential into
         performance.
       </div>
-      <div>
+      <div className="m-3">
         <BookNow />
       </div>
     </div>
