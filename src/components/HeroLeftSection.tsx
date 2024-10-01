@@ -18,7 +18,7 @@ export function HeroLeftSection() {
           </div>
         </h2>
       </div>
-      <div className="text-xs lg:text-sm w-3/4">
+      <div className="text-xs lg:text-sm w-11/12">
         AI, automation, and innovative web development to elevate your digital
         presence and drive targeted marketing strategies that deliver real
         results. Enhancing efficiency by 40%, driving 3x ROI, or implementing
