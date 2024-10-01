@@ -1,36 +1,20 @@
 import React from "react";
-import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
-import BookNow from "./BookNow";
+import { HeroLeftSection } from "./HeroLeftSection";
+import { HeroRightImage } from "./HeroRightImage";
 
 export function HeroSection() {
   return (
-    <BackgroundBeamsWithCollision>
-      <div className="flex flex-col space-y-6 text-center text-black dark:text-white font-sans ">
-        <div>
-          <h2 className="text-2xl relative z-20 md:text-4xl lg:text-6xl font-bold">
-            3x Growth Through
-            <br />
-            <div className="relative mx-auto inline-block w-max [filter:drop-shadow(0px_1px_3px_rgba(27,_37,_80,_0.14))]">
-              <div className="absolute left-0 top-[1px] bg-clip-text bg-no-repeat text-transparent ]">
-                <span className="">AI Automation.</span>
-              </div>
-              <div className="relative bg-clip-text text-transparent bg-no-repeat bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500 py-4">
-                <span className="">AI Automation.</span>
-              </div>
-            </div>
-          </h2>
-        </div>
-        <div className="text-xs lg:text-sm mx-auto px-8 max-w-[750px]">
-          AI, automation, and innovative web development to elevate your digital
-          presence and drive targeted marketing strategies that deliver real
-          results. Enhancing efficiency by 40%, driving 3x ROI, or implementing
-          AI-driven strategies. Let us help you transform potential into
-          performance.
-        </div>
-        <div>
-          <BookNow />
+    <div className="flex flex-col md:flex-row space-y-8  justify-center md:justify-around items-center h-[52rem] md:h-[48rem] p-4 md:p-12 ">
+      <div>
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute -top-1/4 -left-1/4 w-1/2 h-1/2 bg-indigo-700 rounded-full filter blur-[100px] opacity-30 animate-pulse"></div>
+          <div className="absolute -top-1/4 -right-1/4 w-1/2 h-1/2 bg-purple-700 rounded-full filter blur-[100px] opacity-30 animate-pulse"></div>
+          <div className="absolute -bottom-1/4 -left-1/4 w-1/2 h-1/2 bg-indigo-700 rounded-full filter blur-[100px] opacity-30 animate-pulse"></div>
+          <div className="absolute -bottom-1/4 -right-1/4 w-1/2 h-1/2 bg-purple-700 rounded-full filter blur-[100px] opacity-30 animate-pulse"></div>
         </div>
       </div>
-    </BackgroundBeamsWithCollision>
+      <HeroLeftSection />
+      <HeroRightImage />
+    </div>
   );
 }
