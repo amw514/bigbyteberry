@@ -5,7 +5,7 @@ export function HeroLeftSection() {
   return (
     <div className="flex items-center md:items-start flex-col justify-center space-y-6 text-center md:text-left text-black dark:text-white font-sans  relative w-5/6  md:w-2/4  overflow-hidden ">
       <div>
-        <h2 className="text-3xl relative z-20 lg:text-6xl font-bold">
+        <h2 className="text-2xl relative z-20 sm:text-3xl lg:text-6xl font-bold">
           3x Growth Through
           <br />
           <div className="relative mx-auto inline-block w-max [filter:drop-shadow(0px_1px_3px_rgba(27,_37,_80,_0.14))]">
@@ -25,7 +25,7 @@ export function HeroLeftSection() {
         AI-driven strategies. Let us help you transform potential into
         performance.
       </div>
-      <div className="m-3">
+      <div>
         <BookNow />
       </div>
     </div>
