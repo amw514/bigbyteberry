@@ -6,14 +6,14 @@ export function HeroLeftSection() {
     <div className="flex items-center md:items-start flex-col justify-center space-y-6 text-center md:text-left text-black dark:text-white font-sans  relative w-5/6  md:w-2/4  overflow-hidden ">
       <div>
         <h2 className="text-2xl relative z-20 sm:text-3xl lg:text-6xl font-bold">
-          3x Growth Through
+              All in one solution to
           <br />
           <div className="relative mx-auto inline-block w-max [filter:drop-shadow(0px_1px_3px_rgba(27,_37,_80,_0.14))]">
             <div className="absolute left-0 top-[1px] bg-clip-text bg-no-repeat text-transparent ]">
-              <span className="">AI Automation.</span>
+              <span className="">problems.</span>
             </div>
             <div className="relative bg-clip-text text-transparent bg-no-repeat bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500 py-1">
-              <span className="">AI Automation.</span>
+              <span className="">problems.</span>
             </div>
           </div>
         </h2>
