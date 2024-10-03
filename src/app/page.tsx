@@ -2,6 +2,7 @@
 import FeaturesListSection from "@/components/FeatureListSection";
 import { Navbar } from "@/components/Navbar";
 import ServicesSection from "@/components/ServicesSection";
+import WhyChooseUs from "@/components/WhyChooseUs";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <Navbar />
       <ServicesSection/>
       <FeaturesListSection/>
+      <WhyChooseUs/>
       {/* <FeaturesSection/> */}
     </div>
   );

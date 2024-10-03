@@ -4,9 +4,9 @@ import { AnimatedAutomationSection } from "./AnimatedAutomationSection";
 
 export default function FeaturesListSection() {
   return (
-    <section className="py-6 md:p-16 text-white mx-auto ">
+    <section className="py-6 lg:p-16 text-white mx-auto ">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col items-center md:items-start  lg:flex-row gap-12">
+        <div className="flex flex-col items-center md:items-start  md:flex-row gap-12">
           {/* Left side: Automation and AI */}
           <div className="w-11/12 md:w-1/2 space-y-6 flex flex-col items-center md:items-start text-center md:text-start ">
             <h2 className="text-2xl lg:text-4xl font-bold mb-4">
