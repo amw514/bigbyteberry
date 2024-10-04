@@ -1,18 +1,20 @@
 // import { FeaturesSection } from "@/components/FeaturesSection";
 import ContactForm from "@/components/ContactUsForm";
 import FeaturesListSection from "@/components/FeatureListSection";
-import { Navbar } from "@/components/Navbar";
+import { HeroSection } from "@/components/HeroSection";
+import NavbarApp from "@/components/Navbar";
 import ServicesSection from "@/components/ServicesSection";
 import WhyChooseUs from "@/components/WhyChooseUs";
 
 export default function Home() {
   return (
     <div className="bg-[#030014]">
-      <Navbar />
-      <ServicesSection/>
-      <FeaturesListSection/>
-      <WhyChooseUs/>
-      <ContactForm/>
+      <NavbarApp />
+      <HeroSection />
+      <ServicesSection />
+      <FeaturesListSection />
+      <WhyChooseUs />
+      <ContactForm />
       {/* <FeaturesSection/> */}
     </div>
   );

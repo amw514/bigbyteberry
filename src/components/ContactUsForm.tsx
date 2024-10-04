@@ -10,12 +10,13 @@ import { sendEmail } from "@/lib/send-email";
 
 export default function ContactForm() {
   const [status, setStatus] = useState<string>("");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [company, setCompany] = useState("");
+  const [message, setMessage] = useState("");
   const { toast } = useToast();
 
-  const handleSubmit = async (
-    e: React.FormEvent<HTMLFormElement>,
-    setStatus: React.Dispatch<React.SetStateAction<string>>
-  ) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     const formData = new FormData(e.currentTarget);
@@ -27,6 +28,11 @@ export default function ContactForm() {
         title: "✅ Successfully sent message",
         description: "📧 We'll get back to you as soon as possible.",
       });
+      setName("");
+      setEmail("");
+      setCompany("");
+      setMessage("");
+
     } catch (error) {
       setStatus("error");
       toast({
@@ -46,7 +52,7 @@ export default function ContactForm() {
         we&apos;ll get back to you as soon as possible.
       </p>
 
-      <form className="space-y-4" onSubmit={(e) => handleSubmit(e, setStatus)}>
+      <form className="space-y-4" onSubmit={handleSubmit}>
         {status === "success" && (
           <p className="text-green-500 mt-4">✅ Successfully sent message</p>
         )}
@@ -61,6 +67,9 @@ export default function ContactForm() {
             placeholder="John Doe"
             type="text"
             required
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+
           />
         </LabelInputContainer>
 
@@ -72,6 +81,9 @@ export default function ContactForm() {
             placeholder="john@example.com"
             type="email"
             required
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+
           />
         </LabelInputContainer>
 
@@ -82,6 +94,9 @@ export default function ContactForm() {
             name="company"
             placeholder="Acme Inc."
             type="text"
+            value={company}
+            onChange={(e) => setCompany(e.target.value)}
+
           />
         </LabelInputContainer>
 
@@ -93,6 +108,9 @@ export default function ContactForm() {
             placeholder="Your message here..."
             required
             className="min-h-[100px] resize-y"
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+
           />
         </LabelInputContainer>
 

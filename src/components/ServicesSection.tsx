@@ -77,7 +77,7 @@ export default function ServicesSection() {
         {/* <div className="absolute bottom-1/4 right-1/4 w-1/2 h-1/2 bg-purple-700 rounded-full filter blur-[100px] opacity-30 animate-pulse"></div> */}
       </div>
 
-      <div className="container relative w-11/12  z-10 mx-auto px-4">
+      <div className="container relative w-11/12  z-5 mx-auto px-4">
         <h2 className="text-2xl lg:text-5xl font-bold text-center mb-16">
           Our Services
         </h2>
