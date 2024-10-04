@@ -17,3 +17,4 @@ export const sendEmail = async (formData: FormData) => {
     react: ContactFormEmail({ name, email, company, message }),
   });
 };
+
