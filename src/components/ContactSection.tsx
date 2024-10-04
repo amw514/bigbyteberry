@@ -1,6 +1,6 @@
 import React from 'react'
 import ContactForm from './ContactUsForm'
-import CalendlyEmbed from './CalendlyEmbed'
+// import CalendlyEmbed from './CalendlyEmbed'
 
 const ContactSection = () => {
   return (
