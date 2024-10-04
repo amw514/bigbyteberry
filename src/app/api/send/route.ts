@@ -15,6 +15,5 @@ export const sendEmail = async (formData: FormData) => {
     to: "bigbyteberry@gmail.com",
     subject: `New Contact Form Submission from ${name}`,
     react: ContactFormEmail({ name, email, company, message }),
-    // text: `Name: ${formData.get("name")}\nEmail: ${formData.get("email")}\nCompany: ${formData.get("company")}\nMessage: ${formData.get("message")}`
   });
 };
