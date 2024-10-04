@@ -6,7 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { cn } from "@/lib/utils";
 import { useToast } from "@/hooks/use-toast";
-import { sendEmail } from "@/app/api/send/route";
+import { sendEmail } from "@/lib/send-email";
 
 export default function ContactForm() {
   const [status, setStatus] = useState<string>("");
