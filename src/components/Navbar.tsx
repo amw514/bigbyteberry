@@ -20,7 +20,7 @@ export default function NavbarApp() {
           <div className="flex items-center">
             <div className="flex-shrink-0">
               <Link href="/">
-              <Image src="/logowithtext.svg" alt="Agency Logo" width={140} height={80} />
+              <Image src="/logowithtext.png" alt="Agency Logo" width={140} height={80} />
               </Link>
             </div>
             <div className="hidden md:block">
