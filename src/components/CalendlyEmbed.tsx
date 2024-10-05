@@ -1,20 +1,20 @@
-// import React from "react";
+"use client";
+import React from "react";
+import { InlineWidget } from "react-calendly";
 
-// const CalendlyEmbed = () => {
-//   return (
-//     <div>
-//       <div
-//         class="calendly-inline-widget"
-//         data-url="https://calendly.com/bigbyteberry?hide_gdpr_banner=1&background_color=271515&text_color=fffcfc&primary_color=6e00ff"
-//         style="min-width:320px;height:700px;"
-//       ></div>
-//       <script
-//         type="text/javascript"
-//         src="https://assets.calendly.com/assets/external/widget.js"
-//         async
-//       ></script>
-//     </div>
-//   );
-// };
-
-// export default CalendlyEmbed;
+export default function CalendlyEmbed() {
+  return (
+    <div style={{ backgroundColor: "#1a1a1a" }}>
+      <InlineWidget
+      
+        url="https://calendly.com/bigbyteberry/30min?hide_landing_page_details=1&hide_gdpr_banner=1&background_color=000000&text_color=ffffff&primary_color=9a58f6"
+        styles={{
+          height: "700px",
+          minWidth: "320px",
+          backgroundColor: "#1a1a1a",
+          colorScheme: "white"
+        }}
+      />
+    </div>
+  );
+}

@@ -61,10 +61,8 @@ export default function NavbarApp() {
             <MobileNavItem href="/about" text="About" />
             <MobileNavItem href="/contact" text="Contact" />
           </div>
-          <div className="pt-4 pb-3 border-t border-gray-700">
-            <button className="bg-purple-600 bg-opacity-50 hover:bg-opacity-75 text-white px-4 py-2 rounded-md text-sm font-medium w-full transition duration-300 ease-in-out transform hover:scale-105 backdrop-filter backdrop-blur-sm">
-              Get Started
-            </button>
+          <div className="p-4 w-full mx-auto border-t border-gray-700">
+           <BookNow/>
           </div>
         </div>
       )}

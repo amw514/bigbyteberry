@@ -1,5 +1,5 @@
 // import { FeaturesSection } from "@/components/FeaturesSection";
-import ContactForm from "@/components/ContactUsForm";
+import ContactSection from "@/components/ContactSection";
 import FeaturesListSection from "@/components/FeatureListSection";
 import { HeroSection } from "@/components/HeroSection";
 import NavbarApp from "@/components/Navbar";
@@ -14,7 +14,7 @@ export default function Home() {
       <ServicesSection />
       <FeaturesListSection />
       <WhyChooseUs />
-      <ContactForm />
+      <ContactSection />
       {/* <FeaturesSection/> */}
     </div>
   );
