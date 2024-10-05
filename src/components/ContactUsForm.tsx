@@ -43,7 +43,7 @@ export default function ContactForm() {
     }
   };
   return (
-    <div className="max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black">
+    <div className="max-w-lg w-full mx-auto rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black">
       <h2 className="font-bold text-2xl text-neutral-800 dark:text-neutral-200 mb-2">
         Contact Us
       </h2>
