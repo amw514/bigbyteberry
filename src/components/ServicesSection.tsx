@@ -32,7 +32,7 @@ const services = [
     icon: TrendingUp,
     title: "SaaS Development",
     description:
-      "Scalable SaaS platforms tailored to your needs. We create cloud-based solutions that offer flexibility and drive business efficiency.",
+      "Scalable SaaS platforms tailored to your needs. We handles everything from concept to deployment. We ensure a smooth, efficient, and scalable process",
     link: "/services/saas-development",
   },
   {
