@@ -7,8 +7,6 @@ import {
   Users,
   Rocket,
   Search,
-  Cog,
-  CheckCircle,
 } from "lucide-react";
 import Link from "next/link";
 
