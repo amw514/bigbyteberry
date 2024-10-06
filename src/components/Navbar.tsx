@@ -58,10 +58,10 @@ export default function NavbarApp() {
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <MobileNavItem href="/" text="Home" />
-            <MobileNavItem href="/services" text="Services" />
-            <MobileNavItem href="/portfolio" text="Portfolio" />
+            <MobileNavItem href="/#services" text="Services" />
+            <MobileNavItem href="/#whyus" text="Why us" />
             <MobileNavItem href="/about" text="About" />
-            <MobileNavItem href="/contact" text="Contact" />
+            <MobileNavItem href="/#contact" text="Contact" />
           </div>
           <div className="p-4 w-full mx-auto border-t border-gray-700">
            <BookNow/>
