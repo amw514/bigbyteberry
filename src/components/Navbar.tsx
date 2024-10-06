@@ -26,10 +26,11 @@ export default function NavbarApp() {
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">
                 <NavItem href="/" text="Home" />
-                <NavItem href="/services" text="Services" />
-                <NavItem href="/portfolio" text="Portfolio" />
+                <NavItem href="/#services" text="Services" />
+                <NavItem href="/#whyus" text="Why Us" />
+                {/* <NavItem href="#projects" text="Projects" /> */}
                 <NavItem href="/about" text="About" />
-                <NavItem href="#contact" text="Contact" />
+                <NavItem href="/#contact" text="Contact" />
               </div>
             </div>
           </div>

@@ -3,7 +3,7 @@ import { ReasonsToChoose } from "./ReasonsToChoose";
 
 const WhyChooseUs = () => {
   return (
-    <div className="w-11/12 mx-auto py-16 flex flex-col space-x-6">
+    <div id="whyus" className="w-11/12 mx-auto py-16 flex flex-col space-x-6">
       <div>
         <h2 className="text-2xl lg:text-5xl font-bold text-center mb-6 dark:text-white">
           Why Choose Us
