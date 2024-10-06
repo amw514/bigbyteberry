@@ -16,7 +16,7 @@ export default function FeaturesListSection() {
               </span>
             </h2>
             <p className="text-gray-300 mb-6">
-              Harness the power of cutting-edge technology to streamline your
+              Harness the power of to streamline your
               processes, enhance user experiences, and achieve your business
               goals through innovative Automation, AI and Web Development.
             </p>
