@@ -97,7 +97,6 @@ export default function ServicesSection() {
     >
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/4 left-1/4 w-1/2 h-1/2 bg-indigo-700 rounded-full filter blur-[100px] opacity-30 animate-pulse"></div>
-        {/* <div className="absolute bottom-1/4 right-1/4 w-1/2 h-1/2 bg-purple-700 rounded-full filter blur-[100px] opacity-30 animate-pulse"></div> */}
       </div>
 
       <div className="container relative w-11/12  z-5 mx-auto px-4">
@@ -107,18 +106,22 @@ export default function ServicesSection() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <LinkPreview url={service.link} key={index} imageSrc={service.imgSrc} isStatic = {true}  className="bg-[#1a1f2a] p-6 rounded-lg shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 hover:bg-[#252b3b] group">
-               
-                <div className="flex items-center justify-center w-16 h-16 mb-6 rounded-full bg-gradient-to-br from-purple-500 via-violet-500 to-pink-500 group-hover:shadow-lg group-hover:shadow-purple-500/50 transition-all duration-300">
-                  <service.icon className="w-8 h-8 text-white" />
-                </div>
-                <h3 className="text-xl font-semibold mb-3 group-hover:text-purple-400 transition-colors duration-300">
-                  {service.title}
-                </h3>
-                <p className="text-gray-300 group-hover:text-gray-200 transition-colors duration-300">
-                  {service.description}
-                </p>
-              
+            <LinkPreview
+              url={service.link}
+              key={index}
+              imageSrc={service.imgSrc}
+              isStatic={true}
+              className="bg-[#1a1f2a] p-6 rounded-lg shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 hover:bg-[#252b3b] group"
+            >
+              <div className="flex items-center justify-center w-16 h-16 mb-6 rounded-full bg-gradient-to-br from-purple-500 via-violet-500 to-pink-500 group-hover:shadow-lg group-hover:shadow-purple-500/50 transition-all duration-300">
+                <service.icon className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-xl font-semibold mb-3 group-hover:text-purple-400 transition-colors duration-300">
+                {service.title}
+              </h3>
+              <p className="text-gray-300 group-hover:text-gray-200 transition-colors duration-300">
+                {service.description}
+              </p>
             </LinkPreview>
           ))}
         </div>
