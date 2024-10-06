@@ -44,9 +44,9 @@ export default function Footer() {
           <div>
             <h3 className="text-gray-400 uppercase text-sm font-semibold mb-4">Company</h3>
             <ul className="space-y-2">
+              <li><Link href="#" className="hover:text-gray-300">FAQs</Link></li>
+              <li><Link href="#" className="hover:text-gray-300">PRIVACY POLICY</Link></li>
               <li><Link href="#" className="hover:text-gray-300">About</Link></li>
-              <li><Link href="#" className="hover:text-gray-300">Careers</Link></li>
-              <li><Link href="#" className="hover:text-gray-300">Partners</Link></li>
             </ul>
             <div className="mt-6 ">
               <BookNow/>
@@ -54,11 +54,6 @@ export default function Footer() {
           </div>
         </div>
         <div className="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <div className="flex space-x-4 mb-4 md:mb-0">
-            <Link href="#" className="text-sm text-gray-400 hover:text-white">TERMS OF USE</Link>
-            <Link href="#" className="text-sm text-gray-400 hover:text-white">PRIVACY POLICY</Link>
-            <Link href="#" className="text-sm text-gray-400 hover:text-white">SECURITY</Link>
-          </div>
           <div className="flex items-center space-x-2">
             <Image src="/logowithtext.png" width={200} height={80} alt="logo" />
           </div>

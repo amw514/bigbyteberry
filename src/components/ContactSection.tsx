@@ -2,13 +2,14 @@ import React from "react";
 import ContactForm from "./ContactUsForm";
 import { Globe } from "./Globe";
 import Link from "next/link";
+import { CommandCode } from "./ui/code-component";
 
 const ContactSection = () => {
   return (
     <section className="container mx-auto py-12 px-4 sm:px-6 lg:px-8">
-      <div className="text-center flex flex-col space-y-7 max-w-lg mx-auto">
+      <div className="text-center flex flex-col items-center space-y-7 max-w-lg mx-auto">
         <h2 className="text-2xl lg:text-4xl font-bold ">Contact Us</h2>
-        <p className="text-gray-300  ">
+        <p className="text-gray-300">
           Help us empower your business with global reach and cutting-edge
           solutions. We&apos;re ready to take your brand to the next level!
         </p>
@@ -21,6 +22,9 @@ const ContactSection = () => {
             Schedule a Call
           </button>
         </Link>
+        <div>
+          <CommandCode>bigbyteberry@gmail.com</CommandCode>
+        </div>
       </div>
       <div className="flex flex-col lg:flex-row gap-8 justify-center items-start mt-10">
         <div className="w-full lg:w-1/2 max-w-2xl">
