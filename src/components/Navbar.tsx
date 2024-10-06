@@ -30,6 +30,7 @@ export default function NavbarApp() {
                 <NavItem href="/#whyus" text="Why Us" />
                 {/* <NavItem href="#projects" text="Projects" /> */}
                 <NavItem href="/about" text="About" />
+                <NavItem href="/faqs" text="FAQs" />
                 <NavItem href="/#contact" text="Contact" />
               </div>
             </div>
