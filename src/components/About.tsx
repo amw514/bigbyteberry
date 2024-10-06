@@ -1,102 +1,116 @@
-import Image from "next/image";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { ScrollArea } from "@/components/ui/scroll-area";
 import {
-  ArrowRight,
-  Code,
+  MessageCircle,
   Zap,
+  TrendingUp,
   Users,
-  Lightbulb,
   Shield,
   Handshake,
 } from "lucide-react";
 
-export default function About() {
+export default function Component() {
   const coreValues = [
     {
-      icon: <Users className="w-8 h-8 text-teal-500" />,
+      icon: MessageCircle,
       title: "Client Value",
+      description:
+        "We believe that the success of our clients defines our success. We are fully committed to understanding your business goals and delivering solutions that go beyond expectations.",
     },
     {
-      icon: <Lightbulb className="w-8 h-8 text-yellow-500" />,
+      icon: Zap,
       title: "Innovation & Excellence",
+      description:
+        "Innovation is at the heart of everything we do. We constantly push the boundaries of technology to ensure that our solutions are forward-thinking and cutting-edge.",
     },
     {
-      icon: <Shield className="w-8 h-8 text-blue-500" />,
+      icon: Shield,
       title: "Integrity & Transparency",
+      description:
+        "We maintain honest, open communication with our clients, employees, and partners. You can trust us to deliver what we promise.",
     },
     {
-      icon: <Handshake className="w-8 h-8 text-green-500" />,
+      icon: Users,
       title: "People-Centric Approach",
+      description:
+        "We prioritize well-being, collaboration, and mutual respect. Our team is dedicated to fostering strong and enduring relationships.",
     },
     {
-      icon: <Code className="w-8 h-8 text-indigo-500" />,
+      icon: TrendingUp,
       title: "Accountability",
+      description:
+        "We take responsibility for our actions, our services, and the outcomes we create for our clients. Every project is treated with the utmost care.",
     },
     {
-      icon: <Zap className="w-8 h-8 text-orange-500" />,
+      icon: Handshake,
       title: "Collaboration & Teamwork",
+      description:
+        "We believe in the power of collaboration. By bringing together diverse skill sets and backgrounds, we foster innovation and progress.",
     },
   ];
 
   return (
-    <div className="w-11/12 mx-auto py-24">
-      <header>
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            About BigByteBerry
-          </h1>
-          <p className="text-xl md:text-2xl">
-            Empowering businesses through innovative technology solutions
-          </p>
-        </div>
-      </header>
-
-      <main className="container mx-auto px-4 py-12">
-        <section className="mb-16">
-          <h2 className="text-3xl font-bold mb-6">Discover Our Story</h2>
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div>
-              <p className=" mb-4">
+    <div className="container mx-auto px-4 py-20 w-11/12  text-white min-h-screen">
+      <h1 className="text-4xl font-bold text-center mb-8">
+        About BigByteBerry
+      </h1>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <Card className="col-span-full bg-[#1a1a2e] border-none">
+          <CardHeader>
+            <CardTitle className="text-white">Discover Our Story</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ScrollArea className="h-[200px] text-gray-300">
+              <p>
                 BigByteBerry was founded with a vision to empower businesses
                 through innovative and advanced technology solutions. From small
                 startups to growing enterprises, we provide tech-driven services
                 that transform the way companies operate, streamline their
                 processes, and build stronger digital presences.
               </p>
-              <p className="">
+              <p className="mt-4">
                 Our journey began with a group of tech enthusiasts passionate
                 about leveraging the latest technological advancements, from web
                 design to artificial intelligence (AI), automation, and digital
-                transformation.
+                transformation. We noticed a gap in the market where businesses
+                needed not just a digital solution but a partner who could help
+                them thrive in the fast-evolving tech landscape. With that in
+                mind, BigByteBerry was born to offer more than just
+                services—we&apos;re here to be a strategic partner in growth.
               </p>
-            </div>
-            <div className="relative h-64 md:h-full">
-              <Image
-                src="/placeholder.svg?height=400&width=600"
-                alt="BigByteBerry team"
-                layout="fill"
-                objectFit="cover"
-                className="rounded-lg shadow-lg"
-              />
-            </div>
-          </div>
-        </section>
-
-        <section className="mb-16">
-          <h2 className="text-3xl font-bold mb-6">Our Mission & Vision</h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="p-6 rounded-lg shadow-md">
-              <h3 className="text-2xl font-semibold mb-4">Our Mission</h3>
-              <p className="">
+              <p className="mt-4">
+                Today, we are a full-service tech agency offering a range of
+                solutions, including web development, AI integration,
+                automation, chatbot development, SaaS platforms, digital
+                marketing, and MVP creation. Our goal is to help businesses of
+                all sizes stay ahead in a competitive digital world.
+              </p>
+            </ScrollArea>
+          </CardContent>
+        </Card>
+        <Card  className="bg-[#1a1a2e] col-span-2  border-none">
+          <CardHeader>
+            <CardTitle className="text-white">Our Mission</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ScrollArea className="text-gray-300">
+              <p>
                 At BigByteBerry, our mission is to empower businesses by
                 providing cutting-edge, tailored technology solutions that
                 enable growth, innovation, and efficiency. We are committed to
                 delivering high-quality services that solve real-world
                 challenges and create value for our clients through technology.
               </p>
-            </div>
-            <div className=" p-6 rounded-lg shadow-md">
-              <h3 className="text-2xl font-semibold mb-4">Our Vision</h3>
-              <p className="">
+            </ScrollArea>
+          </CardContent>
+        </Card>
+        <Card className="bg-[#1a1a2e] border-none">
+          <CardHeader>
+            <CardTitle className="text-white">Our Vision</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ScrollArea className=" text-gray-300">
+              <p>
                 We envision a future where businesses, regardless of size, can
                 easily access and integrate the most innovative technologies to
                 drive success and scale without limitations. BigByteBerry
@@ -104,46 +118,28 @@ export default function About() {
                 pushing the boundaries of what&apos;s possible through digital
                 transformation.
               </p>
-            </div>
-          </div>
-        </section>
-
-        <section className="mb-16">
-          <h2 className="text-3xl font-bold mb-6">
-            Core Values That Drive Our Brand Forward
-          </h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
-            {coreValues.map((value, index) => (
-              <div
-                key={index}
-                className="bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center"
-              >
-                {value.icon}
-                <h3 className="text-xl font-semibold mt-4 mb-2">
-                  {value.title}
-                </h3>
+            </ScrollArea>
+          </CardContent>
+        </Card>
+      </div>
+      <h2 className="text-3xl font-bold text-center my-8">
+        Core Values That Drive Our Brand Forward
+      </h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {coreValues.map((value, index) => (
+          <Card key={index} className="bg-[#1a1a2e] border-none">
+            <CardHeader>
+              <div className="w-12 h-12 rounded-full bg-[#8a2be2] flex items-center justify-center mb-4">
+                <value.icon className="w-6 h-6 text-white" />
               </div>
-            ))}
-          </div>
-        </section>
-
-        <section>
-          <h2 className="text-3xl font-bold mb-6">Why Choose Us?</h2>
-          <div className="">
-            <p className="text-lg mb-4">
-              BigByteBerry isn&apos;t just another tech agency. We are your
-              dedicated partner for success. With a people-driven approach, a
-              passion for innovation, and a commitment to excellence, we deliver
-              solutions that make a real difference to your business.
-            </p>
-            <p className="text-lg">
-              Whether you need a sophisticated AI system or a beautifully
-              designed website, we have the expertise and dedication to make it
-              happen.
-            </p>
-          </div>
-        </section>
-      </main>
+              <CardTitle className="text-white">{value.title}</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p className="text-gray-300">{value.description}</p>
+            </CardContent>
+          </Card>
+        ))}
+      </div>
     </div>
   );
 }
