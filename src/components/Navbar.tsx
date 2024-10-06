@@ -29,7 +29,7 @@ export default function NavbarApp() {
                 <NavItem href="/services" text="Services" />
                 <NavItem href="/portfolio" text="Portfolio" />
                 <NavItem href="/about" text="About" />
-                <NavItem href="/contact" text="Contact" />
+                <NavItem href="#contact" text="Contact" />
               </div>
             </div>
           </div>

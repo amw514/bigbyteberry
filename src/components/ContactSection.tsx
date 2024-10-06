@@ -6,7 +6,7 @@ import { CommandCode } from "./ui/code-component";
 
 const ContactSection = () => {
   return (
-    <section className="container mx-auto py-12 px-4 sm:px-6 lg:px-8">
+    <section id="contact" className="container mx-auto pb-12 pt-20 px-4 sm:px-6 lg:px-8">
       <div className="text-center flex flex-col items-center space-y-7 max-w-lg mx-auto">
         <h2 className="text-2xl lg:text-4xl font-bold ">Contact Us</h2>
         <p className="text-gray-300">
