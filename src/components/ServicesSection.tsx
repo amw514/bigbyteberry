@@ -12,6 +12,7 @@ import {
   MessageCircle,
 } from "lucide-react";
 import Link from "next/link";
+import { LinkPreview } from "./ui/link-preview";
 
 const services = [
   {
@@ -20,6 +21,7 @@ const services = [
     description:
       "AI-powered chatbots for seamless customer interactions. Automate responses and improve engagement with intelligent, real-time support.",
     link: "/services/ai-chatbots",
+    imgSrc: "/chatbot.png",
   },
   {
     icon: Zap,
@@ -27,6 +29,7 @@ const services = [
     description:
       "Automate routine tasks and improve productivity. Our automation solutions streamline workflows, saving time and reducing costs.",
     link: "/services/automation-solutions",
+    imgSrc: "/automation.png",
   },
   {
     icon: TrendingUp,
@@ -34,6 +37,7 @@ const services = [
     description:
       "Scalable SaaS platforms tailored to your needs. We handles everything from concept to deployment. We ensure a smooth, efficient, and scalable process",
     link: "/services/saas-development",
+    imgSrc: "/saas.png",
   },
   {
     icon: RocketIcon,
@@ -41,6 +45,7 @@ const services = [
     description:
       "Launch your MVP in 30 days with core features. Validate your product and enter the market quickly with minimal risk.",
     link: "/services/mvp-for-startups",
+    imgSrc: "/mvp.png",
   },
   {
     icon: Laptop,
@@ -48,6 +53,7 @@ const services = [
     description:
       "Custom websites tailored to your business needs. We build responsive, scalable websites with seamless user experiences.",
     link: "/services/web-development",
+    imgSrc: "/web.png",
   },
   {
     icon: Smartphone,
@@ -55,6 +61,7 @@ const services = [
     description:
       "Native and cross-platform mobile applications. Engage your customers on-the-go with innovative and high-performance apps.",
     link: "/services/mobile-app-development",
+    imgSrc: "/mobile.png",
   },
   {
     icon: PenTool,
@@ -62,6 +69,7 @@ const services = [
     description:
       "Intuitive and attractive user interfaces and experiences. Our designs focus on enhancing usability and driving engagement.",
     link: "/services/ui-ux-design",
+    imgSrc: "/uiux.png",
   },
   {
     icon: Globe,
@@ -69,6 +77,7 @@ const services = [
     description:
       "Improve your online visibility and search engine rankings. We optimize every aspect of your site for better organic traffic.",
     link: "/services/seo-optimization",
+    imgSrc: "/seo.png",
   },
   {
     icon: BarChart,
@@ -76,6 +85,7 @@ const services = [
     description:
       "Comprehensive digital marketing strategies and campaigns. Grow your brand and conversions with targeted, data-driven approaches.",
     link: "/services/digital-marketing",
+    imgSrc: "/marketing.png",
   },
 ];
 
@@ -97,11 +107,8 @@ export default function ServicesSection() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <Link href={service.link} key={index}>
-              <div
-                key={index}
-                className="bg-[#1a1f2a] p-6 rounded-lg shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 hover:bg-[#252b3b] group"
-              >
+            <LinkPreview url={service.link} key={index} imageSrc={service.imgSrc} isStatic = {true}  className="bg-[#1a1f2a] p-6 rounded-lg shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 hover:bg-[#252b3b] group">
+               
                 <div className="flex items-center justify-center w-16 h-16 mb-6 rounded-full bg-gradient-to-br from-purple-500 via-violet-500 to-pink-500 group-hover:shadow-lg group-hover:shadow-purple-500/50 transition-all duration-300">
                   <service.icon className="w-8 h-8 text-white" />
                 </div>
@@ -111,8 +118,8 @@ export default function ServicesSection() {
                 <p className="text-gray-300 group-hover:text-gray-200 transition-colors duration-300">
                   {service.description}
                 </p>
-              </div>
-            </Link>
+              
+            </LinkPreview>
           ))}
         </div>
       </div>
