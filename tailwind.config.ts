@@ -65,11 +65,10 @@ const config: Config = {
   		},
   		animation: {
   			orbit: 'orbit calc(var(--duration)*1s) linear infinite',
-  			'border-beam': 'border-beam calc(var(--duration)*1s) infinite linear',
-  			marquee: 'marquee var(--duration) infinite linear',
-  			'marquee-vertical': 'marquee-vertical var(--duration) linear infinite',
-  			scroll: 'scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite',
-  			'border-beam': 'border-beam calc(var(--duration)*1s) infinite linear'
+			'border-beam': 'border-beam calc(var(--duration)*1s) infinite linear',
+			marquee: 'marquee var(--duration) infinite linear',
+			'marquee-vertical': 'marquee-vertical var(--duration) linear infinite',
+			scroll: 'scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite'
   		},
   		keyframes: {
   			scroll: {
@@ -106,11 +105,7 @@ const config: Config = {
   					transform: 'translateY(calc(-100% - var(--gap)))'
   				}
   			},
-  			'border-beam': {
-  				'100%': {
-  					'offset-distance': '100%'
-  				}
-  			}
+  			
   		}
   	}
   },
