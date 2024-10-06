@@ -2,6 +2,7 @@ import ContactSection from "@/components/ContactSection";
 import FeaturesListSection from "@/components/FeatureListSection";
 import { HeroSection } from "@/components/HeroSection";
 import ServicesSection from "@/components/ServicesSection";
+import { Testimonials } from "@/components/Testimonials";
 import WhyChooseUs from "@/components/WhyChooseUs";
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
       <ServicesSection />
       <FeaturesListSection />
       <WhyChooseUs />
+      <Testimonials/>
       <ContactSection />
     </div>
   );
