@@ -3,7 +3,7 @@ import BookNow from "./BookNow";
 
 export function HeroLeftSection() {
   return (
-    <div className="flex items-center md:items-start flex-col justify-center space-y-6 text-center md:text-left text-black dark:text-white font-sans  relative w-5/6  md:w-2/4  overflow-hidden ">
+    <div className="flex items-center md:items-start flex-col justify-center space-y-6 text-center md:text-left text-black dark:text-white font-sans  relative w-11/12  md:w-2/4  overflow-hidden">
       <div>
         <h2 className="text-3xl relative z-20 sm:text-4xl lg:text-6xl font-bold">
         Driving Business with 
