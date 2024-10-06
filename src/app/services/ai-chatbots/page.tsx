@@ -1,8 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { MessageCircle, Clock, DollarSign, UserPlus, TrendingUp, Brain } from "lucide-react"
-import BookNow from "@/components/BookNow"
-import Image from "next/image"
+import Link from "next/link"
 
 export default function page() {
   const benefits = [
@@ -37,7 +36,9 @@ export default function page() {
           </div>
           <div className="relative h-64 md:h-full">
             <div className="absolute inset-0 bg-[#8a2be2] rounded-lg transform rotate-3"></div>
-            <Image src="/aichatbots.svg" alt="AI Chatbot" layout="fill" objectFit="contain" className="absolute inset-0 bg-[#1a1a2e] rounded-lg -rotate-3 flex items-center justify-center" />
+            <div className="absolute inset-0 bg-[#1a1a2e] rounded-lg -rotate-3 flex items-center justify-center">
+              <MessageCircle className="w-24 h-24 text-[#8a2be2]" />
+            </div>
           </div>
         </div>
 
@@ -86,7 +87,15 @@ export default function page() {
         <p className="text-lg mb-6">
           If you&apos;re looking to enhance customer engagement and automate routine tasks, our AI chatbots are the solution you need. Get in touch today to discuss how BigByteBerry can help you build an intelligent, scalable chatbot for your business.
         </p>
-        <BookNow/>
+        <Button className="bg-[#8a2be2] hover:bg-[#9b4ddb] text-white font-bold py-2 px-4 rounded">
+            <Link
+              href="https://calendly.com/bigbyteberry/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Schedule a Consultation
+            </Link>
+          </Button>
       </div>
     </div>
   )
